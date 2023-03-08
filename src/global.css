@@ -1,0 +1,43 @@
+:root {
+    --white: #fff;
+    /* Estrategia pra varias tonalidades de uma cor especifica: */ 
+    --gray-100: #e1e1e6;
+    --gray-300: #c4c4c6;
+    --gray-400: #8d8d99;
+    --gray-600: #323238;
+    --gray-700: #29292e;
+    --gray-800: #202024;
+    --gray-900: #121214;
+
+    --green-500: #00875f;
+    --green-300: #00837E;
+
+    --red-500: #F75A68;
+}
+
+/*Sobrescrever as brodas dos tabs na pagina*/
+:focus {
+    outline: transparent; 
+    box-shadow: 0 0 0 2px var(--green-300);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /* Faz com que o elemento nunca aumente sua altura e sim espreme o elemento pra dentro: */ 
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--gray-900);
+    color: var(--gray-300);
+    /* Aplica em navegadores que usam o webkit para que as fotes fiquem mais detalhadas, mais fininhas...: */ 
+    -webkit-font-smoothing: antialiased;
+}
+
+body, input, textarea, button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    /* Usar o REM melhorar a acessibilidade do usuário: 1rem = 16x no tamanho padrão */ 
+    font-size: 1rem;
+}
